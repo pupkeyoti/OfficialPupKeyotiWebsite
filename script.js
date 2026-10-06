@@ -11,6 +11,31 @@ document.querySelectorAll(".nav a").forEach(a => a.addEventListener("click", () 
   toggle?.setAttribute("aria-expanded", "false");
 }));
 
+// Keep the Den artist name consistent everywhere on the rendered site.
+const OLD_RAINBOW_NAME = "Rainbow Skittles";
+const CORRECT_RAINBOW_NAME = "Rainbow Squittles";
+
+const replaceRainbowName = (root = document.body) => {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = walker.nextNode())) {
+    if (node.nodeValue?.includes(OLD_RAINBOW_NAME)) {
+      node.nodeValue = node.nodeValue.replaceAll(OLD_RAINBOW_NAME, CORRECT_RAINBOW_NAME);
+    }
+  }
+
+  document.querySelectorAll("[alt], [aria-label], [title]").forEach(el => {
+    ["alt", "aria-label", "title"].forEach(attr => {
+      const value = el.getAttribute(attr);
+      if (value?.includes(OLD_RAINBOW_NAME)) {
+        el.setAttribute(attr, value.replaceAll(OLD_RAINBOW_NAME, CORRECT_RAINBOW_NAME));
+      }
+    });
+  });
+};
+
+replaceRainbowName();
+
 const grid = document.getElementById("newsGrid");
 const stories = window.PUP_KEYOTI_NEWS || [];
 if (grid) {
@@ -22,4 +47,6 @@ if (grid) {
       ${item.link ? `<a href="${item.link}" target="_blank" rel="noreferrer">${item.linkText || "Read more"} →</a>` : ""}
     </article>
   `).join("");
+
+  replaceRainbowName(grid);
 }
