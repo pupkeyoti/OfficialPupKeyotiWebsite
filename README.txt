@@ -5,7 +5,7 @@ ONLY visuals supplied by Pup Keyoti are used.
 
 RESTORED:
 - Music / catalog
-- The Den Music Artists (Pup Keyoti, Rainbow Skittles, DJFox301, Luna Moonstone)
+- The Den Music Artists (Pup Keyoti, Rainbow Squittles, DJFox301, Luna Moonstone)
 - The Den Ecosystem
 - PUP University (run by Pup Rob)
 - Photography
