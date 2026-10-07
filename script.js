@@ -11,6 +11,13 @@ document.querySelectorAll(".nav a").forEach(a => a.addEventListener("click", () 
   toggle?.setAttribute("aria-expanded", "false");
 }));
 
+// The uploaded GitHub repo stores image files at the repository root,
+// while the HTML still references them under assets/. Normalize those paths.
+document.querySelectorAll('img[src^="assets/"]').forEach(img => {
+  const src = img.getAttribute("src");
+  if (src) img.setAttribute("src", src.replace(/^assets\//, ""));
+});
+
 // Keep the Den artist name consistent everywhere on the rendered site.
 const OLD_RAINBOW_NAME = "Rainbow Skittles";
 const CORRECT_RAINBOW_NAME = "Rainbow Squittles";
