@@ -126,7 +126,7 @@ if (contactSection && !document.getElementById("kpup")) {
 
       <div class="kpup-actions">
         <a class="btn primary" href="https://discord.gg/9MyRPgbxvB" target="_blank" rel="noreferrer">Follow the Journey ↗</a>
-        <a class="btn secondary" href="https://www.pupkeyoti.com/" target="_blank" rel="noreferrer">Investor &amp; Partner Interest ↗</a>
+        <a class="btn secondary" href="mailto:theden@pupkeyoti.com?subject=Project%20KPUP%20Investor%20or%20Partner%20Interest">Investor &amp; Partner Interest ↗</a>
       </div>
 
       <div class="kpup-subsection">
@@ -168,7 +168,7 @@ if (contactSection && !document.getElementById("kpup")) {
         <h3>Investors, developers, creators, and strategic partners.</h3>
         <p>We welcome expressions of interest from potential investors, developers, creators, and strategic partners. As the project develops, we aim to share a clear proposal outlining what we are building, the resources required, and how funding would support each milestone.</p>
         <div class="kpup-actions">
-          <a class="btn primary" href="https://www.pupkeyoti.com/" target="_blank" rel="noreferrer">Register Investor or Partner Interest ↗</a>
+          <a class="btn primary" href="mailto:theden@pupkeyoti.com?subject=Project%20KPUP%20Investor%20or%20Partner%20Interest">Register Investor or Partner Interest ↗</a>
           <a class="btn secondary" href="https://discord.gg/9MyRPgbxvB" target="_blank" rel="noreferrer">Get Project Updates ↗</a>
           <a class="btn secondary" href="https://www.pupkeyoti.com/" target="_blank" rel="noreferrer">Join The Den ↗</a>
         </div>
