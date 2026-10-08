@@ -44,8 +44,10 @@ const replaceRainbowName = (root = document.body) => {
 replaceRainbowName();
 
 // Remove Fluff Fur 30 from the Den Pack team lineup while leaving all other roles unchanged.
-document.querySelectorAll("#leadership .chips span").forEach(chip => {
-  if (chip.textContent.trim() === "Fluff Fur 30") chip.remove();
+document.querySelectorAll("#leadership .tree-card h3").forEach(name => {
+  if (name.textContent.trim() === "Fluff Fur 30") {
+    name.closest(".tree-card")?.remove();
+  }
 });
 
 const grid = document.getElementById("newsGrid");
