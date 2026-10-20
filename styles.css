@@ -8,28 +8,25 @@
 #newsGrid .news-card:first-child p{font-size:0}
 #newsGrid .news-card:first-child p::after{content:"The Den continues expanding globally as Pup Keyoti's music reaches listeners across more than 52 countries.";font-size:1rem;line-height:1.55}
 
-/* Release artwork: use the actual image element and force it to fill the entire card frame. */
+/* Upcoming release artwork — use real optimized files instead of the old tiny/embedded images. */
 #upcoming-den-releases .den-release-cover{
   position:relative !important;
   display:block !important;
   aspect-ratio:4/5 !important;
   overflow:hidden !important;
-  background:#05060b !important;
+  background-color:#05060b !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+}
+#upcoming-den-releases .den-release-card:nth-child(1) .den-release-cover{
+  background-image:url("rainbow-squittles-love-finds-me.webp?v=20261020c") !important;
+}
+#upcoming-den-releases .den-release-card:nth-child(2) .den-release-cover{
+  background-image:url("pup-keyoti-era-of-the-den.webp?v=20261020c") !important;
 }
 #upcoming-den-releases .den-release-cover img{
-  position:absolute !important;
-  inset:0 !important;
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  max-width:none !important;
-  max-height:none !important;
-  margin:0 !important;
-  padding:0 !important;
-  object-fit:cover !important;
-  object-position:center center !important;
-  visibility:visible !important;
-  opacity:1 !important;
+  display:none !important;
 }
 #upcoming-den-releases .den-release-overlay{
   position:absolute !important;
