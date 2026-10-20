@@ -43,15 +43,21 @@ footer{max-width:1180px;margin:auto;padding:44px 22px 58px;border-top:1px solid 
 .artist-onboarding h3{font-size:clamp(1.35rem,2vw,1.8rem);margin:6px 0 8px}.artist-onboarding>div>p{color:var(--muted);max-width:760px}.onboarding-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.onboarding-list span{padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025);color:#dce1f0;font-size:.9rem}.onboarding-email{margin:14px 0 0;color:var(--muted)}.onboarding-email a{color:var(--cyan);font-weight:800}.tree-level.three{grid-template-columns:repeat(3,minmax(190px,300px))}
 @media(max-width:760px){.onboarding-list,.tree-level.three{grid-template-columns:1fr}}
 
-
-/* 2026-10-19 — 48+ countries milestone + Rainbow Squittles release art fix */
+/* 2026-10-20 — 48+ countries + full-quality upcoming release artwork */
 .hero-stats > div:first-child strong{font-size:0}
 .hero-stats > div:first-child strong::after{content:"48+";font-size:1.35rem}
 #newsGrid .news-card:first-child h3{font-size:0}
 #newsGrid .news-card:first-child h3::after{content:"Pup Keyoti reaches 48+ countries worldwide";font-size:1.3rem}
 #newsGrid .news-card:first-child p{font-size:0}
 #newsGrid .news-card:first-child p::after{content:"The Den continues expanding globally as Pup Keyoti's music reaches listeners across more than 48 countries.";font-size:1rem;line-height:1.55}
-#upcoming-den-releases .den-release-card:first-child .den-release-cover{
-  background:#05060b url("rainbow-squittles-love-finds-me.jpg") center/contain no-repeat
+
+#upcoming-den-releases .den-release-card:nth-child(1) .den-release-cover{
+  background:#05060b url("rainbow-squittles-love-finds-me.jpg?v=20261020") center/cover no-repeat;
 }
-#upcoming-den-releases .den-release-card:first-child .den-release-cover img{visibility:hidden}
+#upcoming-den-releases .den-release-card:nth-child(2) .den-release-cover{
+  background:#05060b url("pup-keyoti-era-of-the-den.jpg?v=20261020") center/cover no-repeat;
+}
+#upcoming-den-releases .den-release-card:nth-child(1) .den-release-cover img,
+#upcoming-den-releases .den-release-card:nth-child(2) .den-release-cover img{
+  visibility:hidden;
+}
