@@ -7,3 +7,34 @@
 #newsGrid .news-card:first-child h3::after{content:"Pup Keyoti reaches 52+ countries worldwide";font-size:1.3rem}
 #newsGrid .news-card:first-child p{font-size:0}
 #newsGrid .news-card:first-child p::after{content:"The Den continues expanding globally as Pup Keyoti's music reaches listeners across more than 52 countries.";font-size:1rem;line-height:1.55}
+
+/* Release artwork: use the actual image element and force it to fill the entire card frame. */
+#upcoming-den-releases .den-release-cover{
+  position:relative !important;
+  display:block !important;
+  aspect-ratio:4/5 !important;
+  overflow:hidden !important;
+  background:#05060b !important;
+}
+#upcoming-den-releases .den-release-cover img{
+  position:absolute !important;
+  inset:0 !important;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+#upcoming-den-releases .den-release-overlay{
+  position:absolute !important;
+  left:18px !important;
+  right:18px !important;
+  bottom:18px !important;
+  z-index:3 !important;
+}
