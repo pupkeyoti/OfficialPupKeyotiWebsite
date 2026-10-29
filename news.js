@@ -46,12 +46,12 @@ window.PUP_KEYOTI_NEWS = [
   card.setAttribute("aria-label", "Listen to Pursision on Spotify");
   card.innerHTML = `
     <article class="artist-card">
-      <div class="pursision-art" role="img" aria-label="Pursision On the Radar coming soon artwork"></div>
+      <div class="pursision-art" role="img" aria-label="Pursision — On the Radar coming soon"></div>
       <div class="card-body"><span>DEN ARTIST</span><h3>Pursision</h3><p>Independent artist in The Den ecosystem.</p><strong class="artist-cta">Listen / Follow ↗</strong></div>
     </article>`;
   artistGrid.appendChild(card);
 
   const style = document.createElement("style");
-  style.textContent = `.pursision-art{width:100%;aspect-ratio:1/1;background-image:url('https://i.scdn.co/image/ab6761610000e5ebd6a76c2ddfdb8f514e505f3d');background-size:cover;background-position:center;background-color:#08090d}`;
+  style.textContent = `.pursision-art{width:100%;aspect-ratio:1/1;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 40%,rgba(255,25,25,.35),transparent 24%),repeating-radial-gradient(circle at 50% 50%,rgba(255,20,20,.25) 0 2px,transparent 3px 46px),linear-gradient(145deg,#090909,#180405 60%,#050505);border-bottom:1px solid rgba(255,255,255,.08)}.pursision-art::before{content:'PURSISION\\A ON THE RADAR\\A COMING SOON';white-space:pre;line-height:1.55;font-weight:950;letter-spacing:.12em;color:#fff;text-shadow:0 0 20px rgba(255,0,0,.8)}`;
   document.head.appendChild(style);
 })();
