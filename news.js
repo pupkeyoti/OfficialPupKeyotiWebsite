@@ -1,9 +1,9 @@
 window.PUP_KEYOTI_NEWS = [
   {
-    date: "Sep 21, 2026",
+    date: "Nov 6, 2026",
     category: "Milestone",
-    headline: "Pup Keyoti reaches 43+ countries worldwide",
-    summary: "The Den continues expanding globally as Pup Keyoti's music reaches listeners across more than 43 countries.",
+    headline: "Pup Keyoti reaches 113+ different countries and territories worldwide",
+    summary: "The Den continues expanding globally as Pup Keyoti's music now reaches listeners across 113+ different countries and territories worldwide.",
     link: "https://www.pupkeyoti.com/#top",
     linkText: "Official site"
   },
